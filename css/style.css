@@ -34,6 +34,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 ion-icon {
@@ -1073,24 +1074,36 @@ footer {
 
 #icons {
     font-size: 25px;
-    color: #fcfcfc;
+    color: #333333;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+#icons {
+    font-size: 25px;
     text-decoration: none;
     margin-top: 10px;
 }
 
 .cta {
-    background-color: #243374;
+    background-color: #393939;
     border-radius: 6px;
     text-align: center;
     width: 100%;
+    padding: 20px;
+    height: 170px;
+    margin-top: 50px;
 }
 
-.cta>h3 {
+.cta>h2 {
     color: #fcfcfc;
+    margin-bottom: 25px;
 }
 
 .icon-cont {
     width: 100%;
+    text-align: center;
+    margin-top: 15px;
 }
 
 .cta-btn {
@@ -1102,7 +1115,21 @@ footer {
     line-height: 2;
     padding: 8px;
     text-align: center;
-    width: 80%;
+    width: 40%;
+    border-radius: 2px;
+    display: inline-block;
+    font-size: 17px;
+    font-weight: 600;
+    height: 40px;
+    letter-spacing: .6px;
+    line-height: 40px;
+    padding: 0 32px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.cta-btn>a {
+    color: #fcfcfc;
 }
 
 .copyright {
@@ -1112,6 +1139,58 @@ footer {
 
 footer img {
     margin: 0 auto;
+}
+
+
+/* Bounce To Right */
+
+.hvr-bounce-to-right {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+.hvr-bounce-to-right:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #999999;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.hvr-bounce-to-right:hover,
+.hvr-bounce-to-right:focus,
+.hvr-bounce-to-right:active {
+    color: white;
+}
+
+.hvr-bounce-to-right:hover:before,
+.hvr-bounce-to-right:focus:before,
+.hvr-bounce-to-right:active:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
 }
 
 

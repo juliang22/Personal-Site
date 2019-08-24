@@ -48,10 +48,10 @@ body>footer>div>div:nth-child(2)>a>ion-icon {
     color: #999999;
 }
 
-*/ */ html,
+html,
 body {
     height: 100%;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     line-height: 1.8;
     color: #999
 }
@@ -313,6 +313,10 @@ a.nav-itm {
 body>div.container-fluid>div.row.justify-content-end>div {
     float: right;
     margin-top: 40px;
+}
+
+.item {
+    margin-bottom: 30px;
 }
 
 body>div.container-fluid>div.row.justify-content-end>div>a {
@@ -1092,7 +1096,7 @@ footer {
     width: 100%;
     padding: 20px;
     height: 170px;
-    margin-top: 50px;
+    margin-top: 35px;
 }
 
 .cta>h2 {
@@ -1248,23 +1252,51 @@ footer img {
 /* About page
 ==================================================*/
 
-.top-bar {
+#passon {
     color: #333;
     padding: 150px 0 150px;
-    background: -webkit-linear-gradient( rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url(../img/01.jpg);
-    background: linear-gradient( rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url(../img/01.jpg);
+    background: -webkit-linear-gradient( rgba(255, 255, 255, .8), rgba(255, 255, 255, .4)), url(../img/Passon/top.jpg);
+    /* background: linear-gradient( rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url(../img/PassOn/top.jpg); */
     background-size: cover;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     background-position: center center;
     text-align: center;
 }
 
-.top-bar h1 {
+#fitwit {
+    color: #333;
+    padding: 150px 0 150px;
+    background: -webkit-linear-gradient( rgba(255, 255, 255, .8), rgba(255, 255, 255, .4)), url(../img/FitMemory/top.jpg);
+    /* background: linear-gradient( rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url(../img/PassOn/top.jpg); */
+    background-size: cover;
+    /* background-attachment: fixed; */
+    background-position: center center;
+    text-align: center;
+}
+
+#passon h1 {
     font-size: 60px;
     text-transform: uppercase;
     font-weight: 700;
-    color: #999;
+    color: #333;
     line-height: 50px;
+    box-shadow: #333;
+}
+
+#fitwit h3 {
+    color: #ffbf00;
+}
+
+#fitwit h1 {
+    font-size: 60px;
+    font-weight: 700;
+    color: #333;
+    line-height: 50px;
+    box-shadow: #333;
+}
+
+#passon h3 {
+    color: #ffbf00;
 }
 
 .top-bar p {

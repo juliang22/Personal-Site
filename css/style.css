@@ -571,6 +571,10 @@ img.img-responsive {
     margin-right: 70px;
 }
 
+#contact {
+    background-color: white;
+}
+
 #profile {
     border-radius: 50%;
 }
@@ -609,6 +613,10 @@ img.img-responsive {
 
 body>div.portfolio-div>div>div:nth-child(2)>div:nth-child(2) {
     position: relative !important;
+}
+
+.portfolio-container {
+    background-color: white;
 }
 
 .desboxes {

@@ -631,6 +631,23 @@ body>div.portfolio-div>div>div:nth-child(2)>div:nth-child(2) {
     margin: 0;
 }
 
+.tldr {
+    border: #ffbf00;
+    border-radius: 2px;
+    border-style: solid;
+    border-radius: 3px;
+    margin-bottom: 30px;
+}
+
+.tldr>h2 {
+    text-align: center;
+}
+
+.tldr>h3 {
+    text-align: center;
+    color: #999999;
+}
+
 .description-info {
     background-color: #F1F1F1;
 }

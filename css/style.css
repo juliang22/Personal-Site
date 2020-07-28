@@ -334,7 +334,7 @@ body>div.container-fluid>div.row.justify-content-end>div>a {
 body>div.container-fluid>div.row.justify-content-end>div>a:hover {
     text-decoration: none;
     color: #ffbf00;
-    font-size: 24px;
+    font-size: 21px;
 }
 
 .dropdown-menu {
@@ -437,6 +437,10 @@ h1 {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+}
+
+.skill-container {
+    text-align: center;
 }
 
 .box-primary-nav-trigger .box-menu-icon {
@@ -581,6 +585,11 @@ img.img-responsive {
 
 #profile {
     border-radius: 50%;
+}
+
+.profile-bottom {
+    margin-top: 25px;
+    text-align: center;
 }
 
 .about-marg {
@@ -1100,22 +1109,23 @@ b i:last-child {
 ==================================================*/
 
 footer {
-    padding: 30px 0;
+    padding-top: 35px;
+    padding-bottom: 20px;
     text-align: center;
     background: #333333;
+    position: absolute;
+    width: 100%;
+    margin-top: 150px;
 }
 
 #icons {
     font-size: 25px;
-    color: #333333;
     text-decoration: none;
     margin-top: 10px;
 }
 
-#icons {
-    font-size: 25px;
-    text-decoration: none;
-    margin-top: 10px;
+#icons:hover {
+    color: #ffbf00;
 }
 
 .cta {
@@ -1125,7 +1135,7 @@ footer {
     width: 100%;
     padding: 20px;
     height: 170px;
-    margin-top: 35px;
+    margin-top: 45px;
 }
 
 .cta>h2 {
@@ -1614,6 +1624,10 @@ textarea:focus {
 }
 
 .mySlides {
+    display: none;
+}
+
+.hide {
     display: none;
 }
 

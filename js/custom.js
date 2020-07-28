@@ -1,4 +1,4 @@
-$(window).load(function () {
+$(window).load(function() {
 
     // preloader
     $('#status').fadeOut(); // will first fade out the loading animation
@@ -8,14 +8,20 @@ $(window).load(function () {
     });
 
 
+
     //  isotope
     var $container = $('.portfolio_container');
     $container.isotope({
         filter: '*',
     });
 
-    $('.portfolio_filter a').click(function () {
+    setTimeout(function() {
+        $("#all").trigger('click');
+    }, 2000);
+
+    $('.portfolio_filter a').click(function() {
         $('.portfolio_filter .active').removeClass('active');
+        $('.portfolio_item').removeClass('hide');
         $(this).addClass('active');
 
         var selector = $(this).attr('data-filter');
@@ -36,7 +42,7 @@ $(window).load(function () {
         $back_to_top = $('.cd-top');
 
     //hide or show the "back to top" link
-    $(window).scroll(function () {
+    $(window).scroll(function() {
         ($(this).scrollTop() > offset) ? $back_to_top.addClass('cd-is-visible'): $back_to_top.removeClass('cd-is-visible cd-fade-out');
         if ($(this).scrollTop() > offset_opacity) {
             $back_to_top.addClass('cd-fade-out');
@@ -44,7 +50,7 @@ $(window).load(function () {
     });
 
     //smooth scroll to top
-    $back_to_top.on('click', function (event) {
+    $back_to_top.on('click', function(event) {
         event.preventDefault();
         $('body,html').animate({
             scrollTop: 0,
@@ -52,10 +58,10 @@ $(window).load(function () {
     });
 
     // input
-    $(".input-contact input, .textarea-contact textarea").focus(function () {
+    $(".input-contact input, .textarea-contact textarea").focus(function() {
         $(this).next("span").addClass("active");
     });
-    $(".input-contact input, .textarea-contact textarea").blur(function () {
+    $(".input-contact input, .textarea-contact textarea").blur(function() {
         if ($(this).val() === "") {
             $(this).next("span").removeClass("active");
         }

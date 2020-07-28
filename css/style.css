@@ -43,6 +43,10 @@ ion-icon {
     margin-bottom: 15px;
 }
 
+ion-icon.md.hydrated:hover {
+    color: #ffbf00;
+}
+
 body>footer>div>div:nth-child(2)>a>ion-icon {
     font-size: 30px;
     color: #999999;
@@ -60,8 +64,15 @@ body {
     display: none;
 }
 
-.foot-pad {
-    padding-bottom: 20px;
+.responsive-broken {
+    margin-top: -20px;
+}
+
+.responsive-border {
+    border: 4px;
+    border-color: #ffbf00;
+    margin: 10px;
+    border-style: solid;
 }
 
 div.container.main-container>h1 {
@@ -338,7 +349,7 @@ a.nav-itm {
 .navlink:hover {
     text-decoration: none;
     color: #ffbf00;
-    font-size: 21px;
+    font-size: 20px;
 }
 
 .item {
@@ -1087,7 +1098,7 @@ footer {
 }
 
 .copyright {
-    color: #393939;
+    color: #999999;
     margin-bottom: 0;
 }
 
@@ -1485,5 +1496,8 @@ textarea:focus {
     }
     .responsive-message {
         display: initial;
+    }
+    figure {
+        width: 50%;
     }
 }
